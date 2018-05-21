@@ -6,7 +6,7 @@ import read_data
 
 def main():
     # load up the groups
-    group_file = open("groups.pickle", "rb")
+    group_file = open("./output/groups.pickle", "rb")
     groups = pickle.load(group_file)
 
     # load up the articles
