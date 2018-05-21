@@ -1,6 +1,6 @@
 """
 
-goal: test how good the similarity measurements on tf-idf are
+goal: group articles into groups of articles with the same topic
 
 """
 
