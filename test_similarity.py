@@ -48,7 +48,7 @@ def main():
     # save groups to file
     print("total number of groups: %d" % len(groups))
     print("saving to pickle")
-    save_file = open("groups", "wb")
+    save_file = open("groups.pickle", "wb")
     pickle.dump(groups, save_file)
 
 
