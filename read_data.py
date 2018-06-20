@@ -142,7 +142,13 @@ def article_to_wordlist(raw_article, remove_stopwords=True, remove_numbers=True)
 
     return words
 
+def articles_to_wordlist(list_articles, remove_stopwords=True, remove_numbers=True):
+    word_lists = []
 
+    for article in list_articles:
+        word_lists.append(article_to_wordlist(article, remove_stopwords, remove_numbers))
+
+    return word_lists
 
 def create_tfidf_model(articles):
     # convert everything to wordlists
